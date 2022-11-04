@@ -306,42 +306,53 @@
   <br />
   <br>Robert Trieste, Alex Gusmano, Gummadi Pavani, Mohana Pranadeep Potti, Rajeev Gurram and Venkata Sundeep
 </p>
-
-<p>Some highlights of this application:</p>
+<br>
+<p><strong>Some highlights of this application:</strong></p>
 
 <ul>
-  <li>We utilize infrastructure from all three major cloud providers: <a href='https://aws.amazon.com/'>Amazon AWS</a>
-    for the backend and service layers to host a Linux EC2 which runs <a href='https://www.python.org/'>Python</a>
-    scripts that scrape publicly-available gas price data published daily by the American Automobile Association, <a
-      href='https://cloud.google.com/'>Google Cloud Platform (GCP)</a> to host the dataframe produced and finally <a
-      href='https://azure.microsoft.com/en-us/'>Microsoft Azure</a> to host and run our web app which is built and
-    debugged using <a href='https://visualstudio.microsoft.com/downloads/'>Visual Studio</a></li>
-  <li><a href='https://learn.microsoft.com/en-us/azure/static-web-apps/build-configuration?tabs=github-actions'>CI/CD
-      Deployment with Azure Static Web App </a> which links VS Code with <a href='https://github.com/'>Git Hub</a> where
-    our repo contains a yml file with deployment parameters.</li>
-  <li><a href='https://angular.io/'>Angular</a> and <a href='http://www.typescriptlang.org/'>TypeScript</a> for
-    client-side code</li>
-  <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+  <li>We utilize <strong>infrastructure from all three major cloud providers</strong>: </li>
 
-  <li><strong>Client-side navigation</strong>. For example, click <em>State Data</em> then <em>Back</em> to return
-    here.
+  <li><a href='https://aws.amazon.com/'>Amazon AWS</a>
+    for the backend to host a Linux EC2 instance. </li>
+
+  <li><a href='https://cloud.google.com/'>Google Cloud Platform (GCP)</a> service account to host the dataframe
+    produced.</li>
+
+  <li><a href='https://azure.microsoft.com/en-us/'>Microsoft Azure</a> to host and run our static web app with a
+    <a href='https://learn.microsoft.com/en-us/azure/static-web-apps/build-configuration?tabs=github-actions'>CI/CD</a>
+    pipeline through <a href='https://github.com/'>Git Hub.</a>
   </li>
-  <li><strong>Angular CLI integration</strong>. In development mode, there's no need to run <code>ng serve</code>. It
-    runs in the background automatically, so your client-side resources are dynamically built on demand and the page
-    refreshes when you modify any file.</li>
-  <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and
-    your
-    <code>dotnet publish</code> configuration automatically invokes <code>ng build</code> to produce minified,
+
+  <li>Built with <a href='https://visualstudio.microsoft.com/downloads/'>Visual Studio Code</a> and</li>
+
+  <li><a href='https://angular.io/'>Angular</a> utilizing <a href='http://www.typescriptlang.org/'>TypeScript</a> for
+    client-side code.</li>
+
+  <li>VS Code has Angular CLI integration. In development mode, there's no need to run
+    <code>ng serve</code>.
+    <br>It runs in the background automatically, so your client-side resources are dynamically built
+    on demand and the page refreshes <br>when you modify any file.
+  </li>
+
+  <li>Efficient production builds. In production mode, development-time features are disabled, and
+    your <code>dotnet publish</code> configuration <br>automatically invokes <code>ng build</code> to produce minified,
     ahead-of-time compiled JavaScript files.
   </li>
+
+  <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+
+  <li>The process kicks off daily with <a href='https://en.wikipedia.org/wiki/Cron'>CRON </a>scheduler in EC2 running <a
+      href='https://www.python.org/'>Python</a>
+    scripts that collect publicly-available gas price data published <br> by the American Automobile Association</li>
+
+  <li><a href='https://pypi.org/'>Libraries</a> such as Beautiful Soup, Pandas, Pydrive, Google Auth, and Google Sheets
+    API help accomplish this and
+    employ the <br>software engineering concept of efficient reuse.</li>
 </ul>
-<p>The <code>ClientApp</code> subdirectory is a standard Angular CLI application. If you open a command prompt in that
-  directory, you can run any <code>ng</code> command (e.g., <code>ng test</code>), or use <code>npm</code> to install
-  extra packages into it.</p>
 
+<br>
 
-
-<p>Some further reading and very helpful references:</p>
+<p><strong>Some further reading and very helpful references:</strong></p>
 
 
 <ul>
