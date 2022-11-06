@@ -6,6 +6,7 @@ import chart_studio
 import chart_studio.plotly as py
 import plotly.graph_objects as go
 import gspread
+from chartStudioAPIconfig import api_key_Chart_Studio
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -25,7 +26,7 @@ scopes = ['https://www.googleapis.com/auth/spreadsheets',
 
 # now try in EC2
 # This worked !@!
-# Moved the sheet to my main Google Acc to add in a script to generate datetime when the sheet is updated
+# Moved the sheet to main Google Acc to add in a script to generate datetime when the sheet is updated
 
 credentials = Credentials.from_service_account_file('gaspricetracker-367021-BTreeAcct.json', scopes=scopes)
 
@@ -80,7 +81,7 @@ df = pd.DataFrame(data, columns=headers)
 
 # This line below will take column headers from the dataframe and use as labels in the "hover" feature so here we pass them as Strings
 
-df['text'] = "State: " + df['State'] + ": Regular $" + df['Regular'].astype(str)  + " Mid-Grade $" + df['Mid-Grade'].astype(str) + " Premium $" +  df['Premium'].astype(str) + " Diesel $" + df['Diesel'].astype(str) + " Timestamp: " + df['Timestamp'].astype(str)  
+df['text'] = "State: " + df['State'] + ": Regular $" + df['Regular'].astype(str)  + " Mid-Grade $" + df['Mid-Grade'].astype(str) + " Premium $" +  df['Premium'].astype(str) + " Diesel $" + df['Diesel'].astype(str) + "<br>Timestamp: " + df['Timestamp'].astype(str)  
 
 # This is the contruction of the Plotly Heatmap or "Choropleth" map
 
@@ -100,14 +101,18 @@ fig = go.Figure(data=go.Choropleth(
 )
 
 # make space for explanation / annotation
-fig.update_layout(margin=dict(l=20, r=5, t=0, b=40),paper_bgcolor="LightSteelBlue")
+fig.update_layout(margin=dict(l=20, r=5, t=0, b=40),paper_bgcolor="LightSteelBlue",autosize=True)
 
 fig.update_layout(font_family="calibri")
 
 fig.update_layout(
-    title_text='<br><br>USA Daily Gas Price Tracker - Averages By State<br>Hover on the State to display the latest daily prices of Regular, Mid-Grade, Premium and Diesel <br>The hover text also includes a timestamp denoting when the data was written to the server',
+    autosize=False,
+    width=1000, height=710,
+    #title_text='<br><br>USA Daily Gas Price Tracker - Averages By State<br>Hover on the State to display the latest daily prices of Regular, Mid-Grade, Premium and Diesel <br>The hover text also includes a timestamp denoting when the data was written to the server',
+    title_text='<br><br>USA Daily Gas Price Tracker - Averages By State', title_x=0.5,
     geo_scope='usa',
 )
+
 
 # Run the Plotly Graph
 
@@ -116,7 +121,7 @@ fig.show()
 # Now connect and Push this to Chart-Studio where we host the plotly chart: 
 
 username = 'bobtreehouse' # your username
-api_key = 'JlEbhBIyJ2iBG5GHgcmR' # your api key - go to profile > settings > regenerate key
+api_key = api_key_Chart_Studio
 
 chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 
