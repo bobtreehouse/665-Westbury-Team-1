@@ -339,14 +339,25 @@
     ahead-of-time compiled JavaScript files.
   </li>
 
-  <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+  <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling.</li>
 
   <li>The process kicks off daily with <a href='https://en.wikipedia.org/wiki/Cron'>CRON </a>scheduler in EC2 running <a
       href='https://www.python.org/'>Python</a>
     scripts that collect publicly-available gas price data published <br> by the American Automobile Association</li>
 
+  <li>The first Python script scrapes the gas price data from the web and writes it as a CSV file to Google Sheets
+    through the API with credentials.</li>
+
+  <li>The second Python script reads that CSV into a <a href='https://wesmckinney.com/pages/about.html'>Pandas
+      dataframe</a> and then uses the open source charting Python library <a
+      href='https://en.wikipedia.org/wiki/Plotly'>Plotly</a> to create the choropleth heatmap.</li>
+
+  <li>The Plotly chart is hosted in <a href='https://chart-studio.plotly.com/feed/#/'>Chart-Studio</a> from where it is
+    then
+    embedded into our site through the Angular front end.</li>
+
   <li><a href='https://pypi.org/'>Libraries</a> such as Beautiful Soup, Pandas, Pydrive, Google Auth, and Google Sheets
-    API help accomplish this and
+    API help accomplish all of this and
     employ the <br>software engineering concept of efficient reuse.</li>
 </ul>
 
