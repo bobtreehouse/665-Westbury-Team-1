@@ -24,3 +24,6 @@ getTestBed().initTestEnvironment(
 const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
 context.keys().forEach(context);
+// Successfully Ran 6/6 Tests for all Angular Components
+// Initial Test was showing 2 Errors related to the Title Variable which we had inserted spaces in for Web view 
+// Tested by ALex 11/7
