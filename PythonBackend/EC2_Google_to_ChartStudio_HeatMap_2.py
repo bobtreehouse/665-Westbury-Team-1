@@ -81,7 +81,7 @@ df = pd.DataFrame(data, columns=headers)
 
 # This line below will take column headers from the dataframe and use as labels in the "hover" feature so here we pass them as Strings
 
-df['text'] = "State: " + df['State'] + ": Regular $" + df['Regular'].astype(str)  + " Mid-Grade $" + df['Mid-Grade'].astype(str) + "<br>Premium $" +  df['Premium'].astype(str) + " Diesel $" + df['Diesel'].astype(str) + "<br>Timestamp: " + df['Timestamp'].astype(str)  
+df['text'] = "State: " + df['State'] + ": Regular $" + df['Regular'].astype(str)  + "<br>Middle $" + df['Mid-Grade'].astype(str) + " Premium $" +  df['Premium'].astype(str) + " Diesel $" + df['Diesel'].astype(str) + "<br>Timestamp: " + df['Timestamp'].astype(str)  
 
 # This is the contruction of the Plotly Heatmap or "Choropleth" map
 

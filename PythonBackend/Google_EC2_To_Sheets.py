@@ -66,17 +66,13 @@ for row in rows:
 df = pd.DataFrame(data)
 
 # add timestamp # change default UTC time to our timezone by way of pytz
-# getting timezone by name
-# some otions below to fix to local time:
-#    NYC_tz = pytz.timezone('US/Eastern')
-#    date_timeNYC = dt.datetime.now.localize(None)
-#    fmt = '%m-%d %H:%M %Z%z'
-#    pytz_string = NYC_tz.strftime(fmt)
-#    t = [date_timeNYC for i in df.index]
-#    t = [dt.datetime.now(tz=NYC_tz).dt.tz_localize(None) for i in df.index]
+ 
+NYC_tz = pytz.timezone('US/Eastern')
+t = datetime.now(NYC_tz)
+d = t.strftime("%a, %b %d, %Y at %I:%M %p")
 
-t = [dt.datetime.now() for i in df.index]
-s = pd.Series(t, name = 'TimeStamp')
+t2 = [d for i in df.index]
+s = pd.Series(t2, name = 'TimeStamp')
 df.insert(0, 'TimeStamp', s)
 
 set_with_dataframe(worksheet1,df,2,1,include_column_header=False)
