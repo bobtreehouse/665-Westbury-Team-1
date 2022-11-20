@@ -9,7 +9,6 @@ import { GasMapComponent } from './gas-map/gas-map.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { API_KEY, GoogleSheetsDbService } from 'ng-google-sheets-db';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
@@ -24,13 +23,7 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    {
-      provide: API_KEY,
-      useValue: environment.googleSheetsApiKey,
-    },
-    GoogleSheetsDbService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 
 })
