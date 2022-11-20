@@ -1,12 +1,12 @@
 
 <p><a name="WestburyTeam1"></a></p>
-# Westbury Team 1 
-## CSCI 665 NYIT Fall 2022 Simo
+<h2 style="text-align: center;">Westbury Team 1</h2>
+<p><strong> CSCI 665 NYIT Fall 2022 Simo</strong></p>
 
 
 **Team Members** <br>
- 1. Alex Gusmano	agusmano@nyit.edu	516-382-0856<br>
- 2. Robert Trieste	rtrieste@nyit.edu	917-806-6333<br>
+ 1. Robert Trieste	rtrieste@nyit.edu	917-806-6333<br>
+ 2. Alex Gusmano	agusmano@nyit.edu	516-382-0856<br>
  3. Mohana Pranadeep Potti	mpotti@nyit.edu	315-737-1799<br>
  4. Pavani Gummadi pgumma01@nyit.edu	848-345-0235<br>
  5. Venkata Ratna Sandeep Paladugu	vpalad03@nyit.edu	315-737-1415<br>
@@ -24,6 +24,45 @@
 <p><a name="AppHighlights"></a></p>
 
 <p><strong>Some highlights of this application:</strong></p>
+
+  <ul>
+  <li>This Angular SPA (Single-Page Web Application - with multiple components) was concieved and built by the members listed<br>
+  above in the Fall of 2022 in conjuction with NYIT's CSCI 665 Software Engineering Course taught by Professor Altion Simo.
+  </li>
+
+  <li>The project was as much about team colllaboration and the iterative process of build software as it was about delivering<br>
+  a functioning app.
+  </li>
+
+  <li>Right from the start the Team had to consider the pros and cons of building a web app versus a native mobile application.</li>
+
+  <li>Although Native mobile apps have some advantages like: can run faster than web apps; greater functionality as they have access to system resources;<br>
+      can work offline, etc, The Team chose to build a web app due to advantages like: Web apps do not need to be downloaded or installed; function in-browser;<br>
+      easy to maintain as they have a common codebase regardless of mobile platform; do not require app store approval, etc.</li>
+
+  <li>During 2022 the US the rest of the World saw Oil and Gasoline prices spike. As this was maintstream economic news with implications for an already delicate <br>
+  supply-chain (diesel fule has a direct impact on the the end price of goods and services here in the United States) the Team decided to build an app that would <br>
+  easily show gasoline prices across the coutry. 
+  </li>
+
+  <li>Our USA Gas Price Tracker employs a python backend that collects publicly-available gas price data published by the American Automobile Association.</li>
+
+  <li>The app adds a data visualization layer by presenting the gas prices by state in a heatmap (chloropleth) with the help of open-source python-based library<br>
+  Plotly and Chart-Studio. This is a great open-source alternative to software such as Tableau and MSFT's Power BI which can become expensive</li>
+
+  <li>The raw data collected is written to and stored in Google Cloud Platform as this is a more economical set-up than using a fully-fledged RDBMS such as SQL Server.<br>
+  </li>
+
+  <li>Some of the main sticking points and more time-consuming portions of building this app were getting the various platforms and services talking to one another:<br> 
+  Such as extracting Google credentials and getting the AWS-EC2 hosted python apps talking through the Google Sheets API with their service account authentication:  
+  </li>
+  <br><br>
+  ![img](images/2022_Google_Service_accounts_IAM_Google_Cloud_console.png)
+  <br>
+  <li>Once things were up and runnnig the Angular frontend made for an efficient presentation layer. By use of backend running timed CRON jobs on the server<br>
+  the app runs by itelf and collects and presents new fresh data daily.   
+  </li> 
+   </ul>
 
 <p><a name="UseOfCloud"></a></p>
 
@@ -73,6 +112,7 @@
   <li>By hosting our application as a Microsoft Azure Static Web App and utilizing GutHub as the codebase repositiory, <br>
   we can build with CI/CD through Git Hub actions and employ "Red to Green" development.</li>
 
+  <br><br>
   ![img](images/2022_Red_to_Green_Dev.png)
   </ul>
 
