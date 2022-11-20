@@ -141,6 +141,9 @@
       href='http://www.typescriptlang.org/' target="_blank" rel="noopener">TypeScript</a> for
     client-side code.</li>
 
+    <br><br>
+    ![img](images/CreateAngularApp.png) 
+
   <li>The Plotly chart is hosted in <a href='https://chart-studio.plotly.com/feed/#/' target="_blank"
       rel="noopener">Chart-Studio</a> from where it is
     then
