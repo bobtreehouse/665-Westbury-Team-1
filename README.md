@@ -105,7 +105,6 @@
   <li>By hosting our application as a Microsoft Azure Static Web App and utilizing GutHub as the codebase repositiory, <br>
   we can build with CI/CD through Git Hub actions and employ "Red to Green" development.</li>
 
-  <br><br>
   ![img](images/2022_Red_to_Green_Dev.png)
   </ul>
 
@@ -140,9 +139,9 @@
   <li><a href='https://angular.io/' target="_blank" rel="noopener">Angular</a> utilizing <a
       href='http://www.typescriptlang.org/' target="_blank" rel="noopener">TypeScript</a> for
     client-side code.</li>
+  
+  ![img](images/CreateAngularApp.png) 
 
-    <br><br>
-    ![img](images/CreateAngularApp.png) 
 
   <li>The Plotly chart is hosted in <a href='https://chart-studio.plotly.com/feed/#/' target="_blank"
       rel="noopener">Chart-Studio</a> from where it is
