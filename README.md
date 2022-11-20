@@ -139,7 +139,7 @@
   <ul>
   <li><a href='https://angular.io/' target="_blank" rel="noopener">Angular</a> utilizing <a
       href='http://www.typescriptlang.org/' target="_blank" rel="noopener">TypeScript</a> for
-    client-side code.</li>
+    client-side code. In VS Code creating the app and adding components with Angular 'ng build' directives.</li>
   <br>
 
   ![img](images/CreateAngularApp.png) 
