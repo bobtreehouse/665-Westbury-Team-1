@@ -48,6 +48,7 @@
 
   <li>Some of the main sticking points and more time-consuming portions of building this app were getting the various platforms and services talking to one another: such as extracting Google credentials and getting the AWS-EC2 hosted python apps talking through the Google Sheets API with their service account authentication:  
   </li>
+  <br>
 
   ![img](images/2022_Google_Service_accounts_IAM_Google_Cloud_console.png)
   <br>
@@ -103,6 +104,7 @@
 
   <li>By hosting our application as a Microsoft Azure Static Web App and utilizing GutHub as the codebase repositiory, <br>
   we can build with CI/CD through Git Hub actions and employ "Red to Green" development.</li>
+<br>
 
   ![img](images/2022_Red_to_Green_Dev.png)
   </ul>
@@ -138,7 +140,8 @@
   <li><a href='https://angular.io/' target="_blank" rel="noopener">Angular</a> utilizing <a
       href='http://www.typescriptlang.org/' target="_blank" rel="noopener">TypeScript</a> for
     client-side code.</li>
-  
+  <br>
+
   ![img](images/CreateAngularApp.png) 
 
 
@@ -168,6 +171,7 @@ Guided Pranadeep as to how to formatt README.md
 
 ### Our team meet via Zoom video conference and used a private WhatsApp Group to schedule meetings.
  - We discussed **iterative** approach to building the project.
+<br>
 
 ![img](images/Nov_TeamMeeting.png)
 
