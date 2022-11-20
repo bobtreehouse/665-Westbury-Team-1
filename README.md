@@ -29,27 +29,27 @@
   <li>This Angular SPA (Single-Page Web Application - with multiple components) was concieved and built by the members listed above in the Fall of 2022 in conjuction with NYIT's CSCI 665 Software Engineering Course taught by Professor Altion Simo.
   </li>
 
-  <li>The project was as much about team colllaboration and the iterative process of build software as it was about delivering a functioning app.
+  <li>The project was as much about team colllaboration and the iterative process of building software as it was about delivering a functioning app.
   </li>
 
   <li>Right from the start the Team had to consider the pros and cons of building a web app versus a native mobile application.</li>
 
-  <li>Although Native mobile apps have some advantages like: can run faster than web apps; greater functionality as they have access to system resources; can work offline, etc, The Team chose to build a web app due to advantages like: Web apps do not need to be downloaded or installed; function in-browser; easy to maintain as they have a common codebase regardless of mobile platform; do not require app store approval, etc.</li>
+  <li>Although native mobile apps have some advantages such as: running faster than web apps in some cases; greater functionality as they have access to system resources; can work offline, etc, the team chose to build a web app due to their inherent advantages such as: web apps do not need to be downloaded or installed; function in-browser; easy to maintain as they have a common codebase regardless of mobile platform; do not require app store approval, etc.</li>
 
-  <li>During 2022 the US the rest of the World saw Oil and Gasoline prices spike. As this was maintstream economic news with implications for an already delicate supply-chain (diesel fule has a direct impact on the the end price of goods and services here in the United States) the Team decided to build an app that would easily show gasoline prices across the coutry. 
+  <li>During 2022 the US much like the rest of the World saw oil and gasoline prices spike. As this was maintstream economic news with implications for an already delicate supply-chain (diesel fule has a direct impact on the the end price of goods and services here in the United States) the Team decided to build an app that would easily show gasoline prices across the coutry. 
   </li>
 
   <li>Our USA Gas Price Tracker employs a python backend that collects publicly-available gas price data published by the American Automobile Association.</li>
 
   <li>The app adds a data visualization layer by presenting the gas prices by state in a heatmap (chloropleth) with the help of open-source python-based library Plotly and Chart-Studio. This is a great open-source alternative to software such as Tableau and MSFT's Power BI which can become expensive</li>
 
-  <li>The raw data collected is written to and stored in Google Cloud Platform as this is a more economical set-up than using a fully-fledged RDBMS such as SQL Server.
+  <li>The raw data collected is written to and stored in Google Cloud Platform (Google Sheets) as this is a more economical set-up than using a fully-fledged RDBMS such as SQL Server.
   </li>
 
-  <li>Some of the main sticking points and more time-consuming portions of building this app were getting the various platforms and services talking to one another: Such as extracting Google credentials and getting the AWS-EC2 hosted python apps talking through the Google Sheets API with their service account authentication:  
+  <li>Some of the main sticking points and more time-consuming portions of building this app were getting the various platforms and services talking to one another: such as extracting Google credentials and getting the AWS-EC2 hosted python apps talking through the Google Sheets API with their service account authentication:  
   </li>
   <br><br>
-  
+
   ![img](images/2022_Google_Service_accounts_IAM_Google_Cloud_console.png)
   <br>
   <li>Once things were up and runnnig the Angular frontend made for an efficient presentation layer. By use of backend running timed CRON jobs on the server<br>
