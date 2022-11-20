@@ -7,6 +7,11 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AboutComponent } from './about/about.component';
 import { GasMapComponent } from './gas-map/gas-map.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { API_KEY, GoogleSheetsDbService } from 'ng-google-sheets-db';
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,10 +20,17 @@ import { GasMapComponent } from './gas-map/gas-map.component';
     GasMapComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: API_KEY,
+      useValue: environment.googleSheetsApiKey,
+    },
+    GoogleSheetsDbService
+  ],
   bootstrap: [AppComponent]
 
 })
