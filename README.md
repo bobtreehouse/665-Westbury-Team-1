@@ -15,7 +15,7 @@
 - <a href="#UseOfCloud">Use of Cloud</a><br>
 - <a href="#ProjectStructure">Project Structure</a><br>
 - <a href="#Backend">Backend</a><br>
-- <a href="#ProjectStructure">Frontend</a><br>
+- <a href="#Frontend">Frontend</a><br>
 - <a href="#TeamMeetings">Team Meetings</a><br>
 - <a href="#Jira">JIRA</a><br>
 - <a href="#Confluence">Confluence</a><br>
@@ -44,11 +44,13 @@
       target="_blank" rel="noopener">CI/CD</a>
     pipeline through <a href='https://github.com/' target="_blank" rel="noopener">Git Hub.</a>
   </li>
+  </ul>
 
 <p><a name="ProjectStructure"></a></p>
 
 <p><strong>Constructing the application:</strong></p>
 
+  <ul>
   <li>Built with <a href='https://visualstudio.microsoft.com/downloads/' target="_blank" rel="noopener">Visual Studio
       Code</a> and</li>
 
@@ -67,13 +69,17 @@
     ahead-of-time compiled JavaScript files.
   </li>
 
-  <li><a href='http://getbootstrap.com/' target="_blank" rel="noopener">Bootstrap</a> for layout and styling.
-  </li>
+  <li>By hosting our application as a Microsoft Azure Static Web App and utilizing GutHub as the codebase repositiory, <br>
+  we can build with CI/CD through Git Hub actions and employ "Red to Green" development.</li>
+
+  ![img](images/2022_Red_to_Green_Dev.png)
+  </ul>
 
 <p><a name="Backend"></a></p>
 
 <p><strong>Backend:</strong></p>
 
+  <ul>
   <li>The process kicks off daily with <a href='https://en.wikipedia.org/wiki/Cron' target="_blank" rel="noopener">CRON
     </a>scheduler in EC2 running <a href='https://www.python.org/' target="_blank" rel="noopener">Python</a>
     scripts that collect publicly-available gas price data published <br> by the American Automobile Association</li>
@@ -96,11 +102,20 @@
 
 <p><strong>Frontend:</strong></p>
 
+  <ul>
+  <li><a href='https://angular.io/' target="_blank" rel="noopener">Angular</a> utilizing <a
+      href='http://www.typescriptlang.org/' target="_blank" rel="noopener">TypeScript</a> for
+    client-side code.</li>
+
   <li>The Plotly chart is hosted in <a href='https://chart-studio.plotly.com/feed/#/' target="_blank"
       rel="noopener">Chart-Studio</a> from where it is
     then
-    embedded into our site through the Angular front end.</li>
+    embedded into our site through the Angular front end.
+  </li>
 
+  <li><a href='http://getbootstrap.com/' target="_blank" rel="noopener">Bootstrap</a> for layout and styling.
+  </li>
+  </ul>
 
 <p><a name="TeamMeetings"></a></p>
 
