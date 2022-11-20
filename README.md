@@ -26,7 +26,7 @@
 
 <p><a name="UseOfCloud"></a></p>
 
-<p><strong>Use of the Cloud - Touch all 3 major CLoud Platforms:</strong></p>
+<p><strong>Use of the Cloud - Touch all 3 major Cloud Platforms:</strong></p>
 
 <ul>
   <li>We utilize <strong>infrastructure from all three major cloud providers</strong>: </li>
@@ -67,7 +67,8 @@
     ahead-of-time compiled JavaScript files.
   </li>
 
-  <li><a href='http://getbootstrap.com/' target="_blank" rel="noopener">Bootstrap</a> for layout and styling.</li>
+  <li><a href='http://getbootstrap.com/' target="_blank" rel="noopener">Bootstrap</a> for layout and styling.
+  </li>
 
 <p><a name="Backend"></a></p>
 
