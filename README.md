@@ -20,6 +20,20 @@ Went over ideas.
 
 https://git-scm.com/downloads
     
+# November 7 Alex and Bob Met
+
+Ran Angular Test(s)
+Found Error caused by Change in title (addition of spaces)
+Ex:"USAGasPriceTracker" -> "USA Gas Price Tracker"
+Error is purely cosmetic and negligable when it comes to function of the code.
+
+Also went over how the project works from FrontEnd To BackEnd
+
+# November 19 Alex and Pranadeep Met
+
+Discussed Readme Documentation as well as project FrontEnd to BackEnd Functionality
+Guided Pranadeep as to how to formatt README.md
+
 
 
 ```python
