@@ -48,7 +48,6 @@
 
   <li>Some of the main sticking points and more time-consuming portions of building this app were getting the various platforms and services talking to one another: such as extracting Google credentials and getting the AWS-EC2 hosted python apps talking through the Google Sheets API with their service account authentication:  
   </li>
-  <br><br>
 
   ![img](images/2022_Google_Service_accounts_IAM_Google_Cloud_console.png)
   <br>
