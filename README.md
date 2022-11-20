@@ -1,6 +1,6 @@
 
 <p><a name="WestburyTeam1"></a></p>
-<h2 style="text-align: center;">Westbury Team 1</h2>
+<h2 style="text-align: center;">USA Gas Price Tracker App - NYIT Westbury Team 1</h2>
 <p><strong> CSCI 665 NYIT Fall 2022 Simo</strong></p>
 
 
