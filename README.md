@@ -41,7 +41,7 @@
 
   <li>Our USA Gas Price Tracker employs a python backend that collects publicly-available gas price data published by the American Automobile Association.</li>
 
-  <li>The app adds a data visualization layer by presenting the gas prices by state in a heatmap (chloropleth) with the help of open-source python-based library Plotly and Chart-Studio. This is a great open-source alternative to software such as Tableau and MSFT's Power BI which can become expensive</li>
+  <li>The app adds a data visualization layer by presenting the gas prices by state in a heatmap (chloropleth) with the help of open-source python-based library Plotly and Chart-Studio. This is a great open-source alternative to software such as Tableau and MSFT's Power BI which can become expensive.</li>
 
   <li>The raw data collected is written to and stored in Google Cloud Platform (Google Sheets) as this is a more economical set-up than using a fully-fledged RDBMS such as SQL Server.
   </li>
@@ -52,8 +52,7 @@
 
   ![img](images/2022_Google_Service_accounts_IAM_Google_Cloud_console.png)
   <br>
-  <li>Once things were up and runnnig the Angular frontend made for an efficient presentation layer. By use of backend running timed CRON jobs on the server<br>
-  the app runs by itelf and collects and presents new fresh data daily.   
+  <li>Once things were up and runnnig the Angular frontend made for an efficient presentation layer. By use of backend running timed CRON jobs on the server the app runs by itelf and collects and presents new fresh data daily.   
   </li> 
    </ul>
 
