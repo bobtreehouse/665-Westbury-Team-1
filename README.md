@@ -199,7 +199,7 @@ Guided Pranadeep as to how to formatt README.md
 <p><strong>Confluence:</strong></p>
 
 <ul>
-<li>We utilized Confluence pages <a href='https://www.atlassian.com/software/confluence/guides/get-started/confluence-overview#hosting-options' target="_blank" rel="noopener">(Atlassian Software)</a> to log supporting reaserch and construct our own 'How-To's' for team knowledge sharing. 
+<li>We utilized Confluence pages <a href='https://www.atlassian.com/software/confluence/guides/get-started/confluence-overview#hosting-options' target="_blank" rel="noopener">(Atlassian Software)</a> to log supporting research and construct our own 'How-To's' for team knowledge sharing. 
 </li>
 </ul>
 <br>
