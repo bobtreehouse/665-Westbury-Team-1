@@ -18,7 +18,7 @@
 - <a href="#Backend">Backend</a><br>
 - <a href="#Frontend">Frontend</a><br>
 - <a href="#TeamMeetings">Team Meetings</a><br>
-- <a href="#Jira">JIRA</a><br>
+- <a href="#Jira">Jira</a><br>
 - <a href="#Confluence">Confluence</a><br>
 
 <p><a name="AppHighlights"></a></p>
@@ -159,22 +159,52 @@
 
 <p><strong>Team Meetings:</strong></p>
 
-Ran Angular Test(s)
+<ul>
+<li>Ran Angular Test(s)
 Found Error caused by Change in title (addition of spaces)
 Ex:"USAGasPriceTracker" -> "USA Gas Price Tracker"
 Error is purely cosmetic and negligable when it comes to function of the code.
+</li>
 
-Also went over how the project works from FrontEnd To BackEnd
+<li>Also went over how the project works from Frontend To Backend
+</li>
 
-Discussed Readme Documentation as well as project FrontEnd to BackEnd Functionality
+<li>Discussed Readme Documentation as well as project FrontEnd to BackEnd Functionality
 Guided Pranadeep as to how to formatt README.md
+</li>
 
-### Our team meet via Zoom video conference and used a private WhatsApp Group to schedule meetings.
+<li>Our team meet via Zoom video conference and used a private WhatsApp Group to schedule meetings.
  - We discussed **iterative** approach to building the project.
+   </li>
+  </ul>
 <br>
 
 ![img](images/Nov_TeamMeeting.png)
 
+
+<p><a name="Jira"></a></p>
+
+<p><strong>Jira:</strong></p>
+
+<ul>
+<li>We utilized Jira boards <a href='https://www.atlassian.com/software/jira/guides/getting-started/overview#:~:text=Jira%20helps%20teams%20plan%2C%20assign,1%20tool%20for%20agile%20teams' target="_blank" rel="noopener">(Atlassian Software)</a> to add and assign tasks and track progress and backlog. 
+</li>
+</ul>
+<br>
+
+![img](images/2022-11_Team_1_JIRA_board.png)
+
+<p><a name="Confluence"></a></p>
+
+<p><strong>Confluence:</strong></p>
+
+<ul>
+<li>We utilized Confluence pages <a href='https://www.atlassian.com/software/confluence/guides/get-started/confluence-overview#hosting-options' target="_blank" rel="noopener">(Atlassian Software)</a> to log supporting reaserch and construct our own 'How-To's' for team knowledge sharing. 
+</li>
+</ul>
+<br>
+
+![img](images/2022-11_Team_1_JIRA_2_board.png)
 
 - <a href="#WestburyTeam1">Back to Top</a><br>
 
