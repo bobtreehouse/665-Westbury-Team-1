@@ -25,6 +25,10 @@
 
 <p><strong>Some highlights of this application:</strong></p>
 
+<ul>
+  <li>You may view our live web app here:<a href='https://www.usagaspricetracker.com/' target="_blank" rel="noopener">https://www.usagaspricetracker.com</a>
+  </li>
+
   <ul>
   <li>This Angular SPA (Single-Page Web Application - with multiple components) was concieved and built by the members listed above in the Fall of 2022 in conjuction with NYIT's CSCI 665 Software Engineering Course taught by Professor Altion Simo.
   </li>
