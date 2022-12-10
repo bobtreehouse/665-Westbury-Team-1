@@ -12,11 +12,6 @@ export const environment = {
  *
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
-googleSheetsApiKey: 'AIzaSyCgDPgSz1q6WFRhyv3ieOWdWvRa-ki68EQ',
-  states: {
-    spreadsheetId: '18-Rc4x0qOaOeZ2ASFgm0lSZXf4bf80Fzm5Q-hInB8O0',
-    worksheetName: 'GPT1',
-  },
 */
 
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
